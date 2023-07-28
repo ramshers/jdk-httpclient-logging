@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.jdkhttpclientlogging;
 
 import java.io.IOException;
 import java.net.URI;

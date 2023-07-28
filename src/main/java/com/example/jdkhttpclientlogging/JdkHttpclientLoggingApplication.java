@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.jdkhttpclientlogging;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -17,7 +17,7 @@ public class JdkHttpclientLoggingApplication {
   @SneakyThrows
   public static void main(String[] args) {
 
-    SpringApplication.run(com.example.demo.JdkHttpclientLoggingApplication.class, args);
+    SpringApplication.run(JdkHttpclientLoggingApplication.class, args);
 
 
     log.info("default charset: " + Charset.defaultCharset());
@@ -31,7 +31,7 @@ public class JdkHttpclientLoggingApplication {
         .send(request, HttpResponse.BodyHandlers.ofString());
 
 
-    System.err.println("response: " + response);
+    log.info("response: " + response);
 
   }
 
